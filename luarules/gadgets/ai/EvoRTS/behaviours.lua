@@ -1,12 +1,12 @@
 
-require "taskqueues"
-require "taskqueuebehaviour"
-require "attackerbehaviour"
---require "missingfactorybehaviour"
-require "engineerturretbehaviour"
-require "autoreclaimbehaviour"
-require "lowenergybehaviour"
-require "factoryregisterbehaviour"
+shard_include("taskqueues")
+shard_include("taskqueuebehaviour")
+shard_include("attackerbehaviour")
+--shard_include("missingfactorybehaviour")
+shard_include("engineerturretbehaviour")
+shard_include("autoreclaimbehaviour")
+shard_include("lowenergybehaviour")
+shard_include("factoryregisterbehaviour")
 
 behaviours = {
 	--eorb = {
