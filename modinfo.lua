@@ -27,7 +27,7 @@ return {
 		--      for single units for example. 
 		--  others - perhaps mutators and addon races that can be 
 		--           enabled in addition to xta for example? 
-		modtype = "1",
+		modtype = "0",
 		-- Number of other archives this one depends on 
 		depend= { 
 			-- Number of other content names this one replaces
