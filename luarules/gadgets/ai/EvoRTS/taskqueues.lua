@@ -6,7 +6,7 @@ math.randomseed( os.time() )
 math.random(); math.random(); math.random()
 
 local function AirOrLand()
-   if (ai.factories < 5) or (ai.factories == nil) then
+   if ((ai.factories or 0) < 5) or (ai.factories == nil) then
 		local r = math.random(0,3)
 		if r == 0 then
 			return "ebasefactory"
@@ -23,7 +23,7 @@ local function AirOrLand()
 end
 
 local function Destroyer()
-   if (ai.factories < 4) then
+   if ((ai.factories or 0) < 4) then
    		return "eexperimentalfac"
 	else
 		return nil
